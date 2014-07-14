@@ -1,0 +1,96 @@
+[submodule "bundle/py.test"]
+	path = bundle/py.test
+	url = https://github.com/alfredodeza/pytest.vim.git
+[submodule "bundle/OmniCppComplete"]
+	path = bundle/OmniCppComplete
+	url = https://github.com/dradtke/OmniCppComplete.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/minibufexpl"]
+	path = bundle/minibufexpl
+	url = https://github.com/fholgado/minibufexpl.vim.git
+[submodule "bundle/pydoc"]
+	path = bundle/pydoc
+	url = https://github.com/fs111/pydoc.vim.git
+[submodule "bundle/showmarks"]
+	path = bundle/showmarks
+	url = https://github.com/jacquesbh/vim-showmarks.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "bundle/pyflakes-pathogen"]
+	path = bundle/pyflakes-pathogen
+	url = https://github.com/mitechie/pyflakes-pathogen.git
+[submodule "bundle/ropevim"]
+	path = bundle/ropevim
+	url = https://github.com/python-rope/ropevim.git
+[submodule "bundle/makegreen"]
+	path = bundle/makegreen
+	url = https://github.com/reinh/vim-makegreen
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/git"]
+	path = bundle/git
+	url = https://github.com/tpope/vim-git.git
+[submodule "bundle/latex-suite"]
+	path = bundle/latex-suite
+	url = https://github.com/vim-scripts/LaTeX-Suite-aka-Vim-LaTeX.git
+[submodule "bundle/ctags"]
+	path = bundle/ctags
+	url = https://github.com/vim-scripts/ctags.vim.git
+[submodule "bundle/tasklist"]
+	path = bundle/tasklist
+	url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bundle/pep8"]
+	path = bundle/pep8
+	url = https://github.com/vim-scripts/pep8.git
+[submodule "bundle/c"]
+	path = bundle/c
+	url = https://github.com/vim-scripts/c.vim.git
+[submodule "bundle/fortran"]
+	path = bundle/fortran
+	url = https://github.com/vim-scripts/fortran.vim.git
+[submodule "bundle/bash"]
+	path = bundle/bash
+	url = https://github.com/vim-scripts/bash-support.vim.git
+[submodule "bundle/perl-support"]
+	path = bundle/perl-support
+	url = https://github.com/vim-scripts/perl-support.vim.git
+[submodule "bundle/CRef"]
+	path = bundle/CRef
+	url = https://github.com/vim-scripts/CRefVim.git
+[submodule "bundle/stlrefvim"]
+	path = bundle/stlrefvim
+	url = https://github.com/vim-scripts/stlrefvim.git
+[submodule "bundle/tex"]
+	path = bundle/tex
+	url = https://github.com/vim-scripts/tex.vim.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
+[submodule "bundle/snippets"]
+	path = bundle/snippets
+	url = https://github.com/vim-scripts/snippets.vim.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = https://github.com/wincent/Command-T.git
