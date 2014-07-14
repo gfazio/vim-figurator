@@ -28,9 +28,6 @@
 [submodule "bundle/pyflakes-pathogen"]
 	path = bundle/pyflakes-pathogen
 	url = https://github.com/mitechie/pyflakes-pathogen.git
-[submodule "bundle/ropevim"]
-	path = bundle/ropevim
-	url = https://github.com/python-rope/ropevim.git
 [submodule "bundle/makegreen"]
 	path = bundle/makegreen
 	url = https://github.com/reinh/vim-makegreen
