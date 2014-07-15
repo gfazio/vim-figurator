@@ -1,10 +1,7 @@
 set nocompatible
-"set tabs to 4 spaces
-set ts=4
-set nu
-
 filetype off
 
+call pathogen#helptags() 
 call pathogen#infect() 
 
 filetype on
@@ -12,9 +9,11 @@ filetype plugin on
 filetype plugin indent on
 
 let mapleader = ","
+
 set co=80
 set lines=24
-set nocp
+set nu
+syn on
 set ofu=syntaxcomplete#Complete
 set autoread
 set autowrite
@@ -26,7 +25,8 @@ set hlsearch
 set showmode
 set foldmethod=indent
 set foldlevel=99
-set completeopt+=longest,menuone
+set completeopt+=longest,menuone,preview
+
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
@@ -38,15 +38,33 @@ set ai
 set laststatus=2 
 "set dictionary+=/usr/share/dict/words
 
-syn on
-
+"------------------------------------------
+"Some Python settings:
+"
 autocmd FileType python set omnifunc=pythoncomplete#Complete
+
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
+
 autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 "This will allow you to check the syn­tax ofy­our entire file by typing :make. you can the get a list of errors with :clist and move between the errors with :cn and :cp.
 "
 autocmd BufRead *.py set makeprg=python\ -c\ \"import\ py_compile,sys;\ sys.stderr=sys.stdout;\ py_compile.compile(r'%')\"
+
 autocmd BufRead *.py set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line\ %l%.%#,%Z%[%^\ ]%\\@=%m
+
+let g:pydiction_location="~/.vim/bundle/pydiction/complete-dict"
+
+"let g:pyflakes_use_quickfix=0
+
+let g:pep8_map='<leader>8'
+
+let g:SuperTabDefaultCompletionType="context"
+
+" Execute file being edited with <Command> + e:
+map <buffer> <D-e> :w\|!/opt/local/bin/env python % <CR>
+
+"------------------------------------------
+
 map <D-F11> :NERDTreeToggle <CR>
 map <C-P> :make %<CR>
 map <D-F3> <ESC>:set guifont=*<CR>
@@ -92,6 +110,9 @@ let g:miniBufExplMapModSelTarget=1
 let g:miniBufExplSplitBelow=1
 let g:miniBufExplVSplit=15
 
+"Gundo Toggle
+map <leader>g :GundoToggle<CR>
+
 "Open miniBufExpl
 map <leader>b :MiniBufExplorer<CR>
 "close miniBufExpl
@@ -99,9 +120,6 @@ map <leader>c :CMiniBufExplorer<CR>
 "update miniBufExpl
 map <leader>u :UMiniBufExplorer<CR>
 
-let g:pydiction_location="~/.vim/bundle/pydiction/complete-dict"
-" Execute file being edited with <Command> + e:
-map <buffer> <D-e> :w\|!/opt/local/bin/env python % <CR>
 
 "cd to current working directory
 nnoremap <leader>cd :cd %:p:h<CR>:pwd<CR>
