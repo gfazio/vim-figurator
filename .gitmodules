@@ -61,9 +61,6 @@
 [submodule "bundle/c"]
 	path = bundle/c-support
 	url = https://github.com/vim-scripts/c.vim.git
-[submodule "bundle/fortran"]
-	path = bundle/fortran
-	url = https://github.com/vim-scripts/fortran.vim.git
 [submodule "bundle/bash"]
 	path = bundle/bash
 	url = https://github.com/vim-scripts/bash-support.vim.git
