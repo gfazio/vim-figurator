@@ -59,7 +59,7 @@
 	path = bundle/pep8
 	url = https://github.com/vim-scripts/pep8.git
 [submodule "bundle/c"]
-	path = bundle/c
+	path = bundle/c-support
 	url = https://github.com/vim-scripts/c.vim.git
 [submodule "bundle/fortran"]
 	path = bundle/fortran
