@@ -12,6 +12,7 @@
   git submodule add https://github.com/mitechie/pyflakes-pathogen.git bundle/pyflakes-pathogen
   git submodule add https://github.com/python-rope/ropevim.git bundle/ropevim
   git submodule add https://github.com/reinh/vim-makegreen bundle/makegreen
+  git submodule add https://github.com/rkulla/pydiction.git bundle/pydiction
   git submodule add https://github.com/scrooloose/syntastic.git bundle/syntastic
   git submodule add https://github.com/sjl/gundo.vim.git bundle/gundo
   git submodule add https://github.com/tpope/vim-fugitive.git bundle/fugitive
@@ -33,3 +34,4 @@
   git submodule add https://github.com/vim-scripts/taglist.vim.git bundle/taglist
   git submodule add https://github.com/vim-scripts/snippets.vim.git bundle/snippets
   git submodule add https://github.com/wincent/Command-T.git bundle/command-t
+  

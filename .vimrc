@@ -2,14 +2,15 @@ set nocompatible
 "set tabs to 4 spaces
 set ts=4
 set nu
-filetype off
-filetype plugin on
-filetype plugin indent on
 
-call pathogen#runtime_append_all_bundles() 
+filetype off
+
 call pathogen#infect() 
 
 filetype on
+filetype plugin on
+filetype plugin indent on
+
 let mapleader = ","
 set co=80
 set lines=24
