@@ -1,8 +1,8 @@
 set nocompatible
 filetype off
 
-call pathogen#helptags() 
 call pathogen#infect() 
+call pathogen#helptags() 
 
 filetype on
 filetype plugin on

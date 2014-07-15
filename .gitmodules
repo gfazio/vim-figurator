@@ -85,9 +85,6 @@
 [submodule "bundle/pydiction"]
 	path = bundle/pydiction
 	url = https://github.com/rkulla/pydiction.git
-[submodule "bundle/bundle/ropevim"]
-	path = bundle/bundle/ropevim
-	url = https://github.com/python-rope/ropevim.git
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/jwhitley/vim-matchit.git
