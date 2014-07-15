@@ -99,11 +99,7 @@ map <leader>c :CMiniBufExplorer<CR>
 "update miniBufExpl
 map <leader>u :UMiniBufExplorer<CR>
 
-let g:pydiction_location='~/.vim/ftplugin/pydiction/complete-dict'
-
-let g:pydoc_cmd='python -m pydoc'
-let g:pydoc_open_cmd='vsplit'
-
+let g:pydiction_location="~/.vim/bundle/pydiction/complete-dict"
 " Execute file being edited with <Command> + e:
 map <buffer> <D-e> :w\|!/opt/local/bin/env python % <CR>
 
