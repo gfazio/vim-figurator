@@ -35,7 +35,23 @@ inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 
 "set autoindenting for programming
 set ai
+
+"Always display status line
 set laststatus=2 
+
+set statusline=%F    "Full path to the file
+set statusline+=\ -\        "Separator 
+set statusline+=%-4{fugitive#statusline()}  "If using git, show 
+                                            "branch being used 
+					    "in status line.
+set statusline+=%=    "Switch to the right side
+set statusline+=%l    "Current line
+set statusline+=/    " Separator
+set statusline+=%L    "Total lines
+"
+"
+"%{fugitive#statusline()}
+
 "set dictionary+=/usr/share/dict/words
 
 "------------------------------------------
@@ -63,12 +79,53 @@ let g:SuperTabDefaultCompletionType="context"
 " Execute file being edited with <Command> + e:
 map <buffer> <D-e> :w\|!/opt/local/bin/env python % <CR>
 
+
+" Add the virtualenv's site-packages to vim path
+
+python << EOF
+
+import os.path
+import sys
+import vim
+if 'VIRTUAL_ENV' in os.environ:
+	project_base_dir = os.environ['VIRTUAL_ENV']
+	sys.path.insert(0,project_base_dir)
+	activate_this = os.path.join(project_base_dir,'bin/activate_this.py')
+	execfile(activate_this, dict(__file__=activate_this))
+EOF
+
+
+"
+" Refactoring using ropevim
+"
+nmap <leader>rj :RopeGotoDefinition<CR>
+nmap <leader>rr :RopeRename<CR>
+
+
+"
+" Execute py tests
+"
+nmap <silent><leader>ptf <Esc>:Pytest file<CR>
+nmap <silent><leader>ptc <Esc>:Pytest class<CR>
+nmap <silent><leader>ptm <Esc>:Pytest method<CR>
+
+"
+" Cycle through test errors
+"
+
+nmap <silent><leader>ptn <Esc>:Pytest next<CR>
+nmap <silent><leader>ptp <Esc>:Pytest previous<CR>
+nmap <silent><leader>pte <Esc>:Pytest error<CR>
+
+
+
 "------------------------------------------
 
 map <D-F11> :NERDTreeToggle <CR>
 map <C-P> :make %<CR>
 map <D-F3> <ESC>:set guifont=*<CR>
 map <buffer> K : execute "!xterm -e 'pydoc " . expand("<cword>") . "'"<CR>
+nmap <leader>a <Esc>:Ack!
 "
 " Taglist variables
 " Display function name in status bar:

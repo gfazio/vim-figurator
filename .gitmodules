@@ -88,3 +88,9 @@
 [submodule "bundle/bundle/ropevim"]
 	path = bundle/bundle/ropevim
 	url = https://github.com/python-rope/ropevim.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/jwhitley/vim-matchit.git
+[submodule "bundle/python_matchit"]
+	path = bundle/python_matchit
+	url = https://github.com/lambacck/python_matchit.git
